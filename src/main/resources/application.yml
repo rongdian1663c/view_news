@@ -7,7 +7,7 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update   #update：每次运行程序，没有表会新建表，但是表内有数据不会被清空，只会更新表结构
-    show-sql: true
+    show-sql: true      #打印sql日志
 
     jwt:
       sign_key: 781546576b45c9f2c8f41cb99d195d4e
