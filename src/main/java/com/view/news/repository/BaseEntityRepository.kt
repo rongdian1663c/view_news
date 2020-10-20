@@ -16,5 +16,5 @@ interface BaseEntityRepository<T : BaseEntity> : JpaRepository<T, Long> {
 //    fun findByDeleted(deleted: Boolean, pageable: Pageable): Page<T>
 
     fun findOneById(id: Long?): T
-
 }
+
