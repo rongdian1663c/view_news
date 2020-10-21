@@ -6,16 +6,15 @@ spring:
     password: d3203088
   jpa:
     hibernate:
-      ddl-auto: update   #update：每次运行程序，没有表会新建表，但是表内有数据不会被清空，只会更新表结构
-    show-sql: true      #打印sql日志
+      ddl-auto: update
+    show-sql: true
 
-    jwt:
-      sign_key: 781546576b45c9f2c8f41cb99d195d4e
-      access_token_expire_time: 21600
+jwt:
+  sign_key: 781546576b45c9f2c8f41cb99d195d4e
+  access_token_expire_time: 21600
 
-    spring.jackson.serialization.write-dates-as-timestamps: true
+spring.jackson.serialization.write-dates-as-timestamps: true
 
-    # 默认的 8080 我们将它改成 9090
-    server.port: 9090
-    # 未定义上下文路径之前 地址是 http://localhost:8080 定义了后 http://localhost:9090 你能在tomcat做的事情，配置文件都可以
-    #server.servlet.context-path: /
+# 默认的 8080 我们将它改成 9090
+server.port: 9090
+# 未定义上下文路径之前 地址是 http://localhost:8080 定义了后 http://localhost:9090 你能在tomcat做的事情，配置文件都可以
