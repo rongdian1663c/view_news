@@ -1,7 +1,7 @@
 package com.view.news.utils
 
 
-import com.viet.news.entity.user.TokenInfo
+import com.view.news.entity.user.TokenInfo
 
 /**
  * @description 保持session在ThreaLocal中

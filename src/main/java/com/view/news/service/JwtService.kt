@@ -101,7 +101,7 @@ class JwtService {
      */
     fun createJwt(jwtInfoVo: JwtInfoVo): String? {
         return try {
-            JWT.create().withIssuer("viet_news")
+            JWT.create().withIssuer("view_news")
                     .withSubject("news")
                     .withClaim("userId", jwtInfoVo.userId)
                     .withClaim("phoneNumber", jwtInfoVo.phoneNumber)
