@@ -1,4 +1,4 @@
-package com.viet.news.utils
+package com.view.news.utils
 
 import com.alibaba.fastjson.JSONObject
 import com.view.news.entity.SMSCodeResponse
